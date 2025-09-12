@@ -80,7 +80,7 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground text-sm">
-            Complete all steps to qualify for your reward. Terms and conditions apply.
+            Complete all steps to qualify for your reward.
           </p>
         </div>
       </footer>
