@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        christmas: {
+          red: "hsl(0 80% 45%)",
+          green: "hsl(120 50% 30%)",
+          gold: "hsl(45 100% 50%)",
+          snow: "hsl(0 0% 100%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,10 +73,12 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-christmas': 'linear-gradient(135deg, hsl(0 75% 35%), hsl(120 50% 25%))',
       },
       boxShadow: {
         'luxury': 'var(--shadow-luxury)',
         'card': 'var(--shadow-card)',
+        'christmas': '0 0 30px hsl(0 80% 50% / 0.3), 0 0 60px hsl(120 50% 40% / 0.2)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
@@ -92,10 +100,15 @@ export default {
             height: "0",
           },
         },
+        "bounce-gentle": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce-gentle": "bounce-gentle 2s ease-in-out infinite",
       },
     },
   },
