@@ -112,8 +112,15 @@ const Index = () => {
           />
         </div>
 
+        {/* What to Expect */}
+        <div className="max-w-2xl mx-auto mt-10 p-5 bg-muted/50 border border-border rounded-xl">
+          <p className="text-sm text-muted-foreground text-center leading-relaxed">
+            <span className="font-medium text-foreground">What are deals?</span> Deals may include mobile games and apps, subscription products and services, free trials, and more. Some deals are free, while others may require a purchase to complete.
+          </p>
+        </div>
+
         {/* Urgency Section */}
-        <div className="max-w-2xl mx-auto mt-10 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
+        <div className="max-w-2xl mx-auto mt-4 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
           <p className="text-foreground font-semibold text-lg mb-2">
             ⚡ Complete all deals today for fastest processing
           </p>
