@@ -2,46 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Christmas themed design system. All colors MUST be HSL. */
+/* Elegant Victoria's Secret inspired design. All colors MUST be HSL. */
 
 @layer base {
   :root {
-    --background: 120 20% 97%;
-    --foreground: 0 60% 20%;
+    --background: 340 30% 98%;
+    --foreground: 340 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 60% 20%;
+    --card-foreground: 340 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 60% 20%;
+    --popover-foreground: 340 40% 15%;
 
-    --primary: 0 80% 45%;
+    --primary: 340 75% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 40% 30%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 340 40% 92%;
+    --secondary-foreground: 340 50% 30%;
 
-    --muted: 120 15% 94%;
-    --muted-foreground: 0 30% 40%;
+    --muted: 340 20% 95%;
+    --muted-foreground: 340 20% 45%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 0 60% 20%;
+    --accent: 340 85% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 120 20% 88%;
-    --input: 120 20% 95%;
-    --ring: 0 80% 45%;
+    --border: 340 30% 90%;
+    --input: 340 20% 96%;
+    --ring: 340 75% 55%;
 
     --radius: 0.75rem;
 
-    /* Christmas design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(0 80% 50%), hsl(0 70% 40%));
-    --gradient-secondary: linear-gradient(180deg, hsl(120 25% 97%), hsl(120 20% 94%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 75% 35%), hsl(120 50% 25%), hsl(0 70% 30%));
-    --shadow-luxury: 0 20px 40px -12px hsl(0 80% 40% / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(120 50% 30% / 0.15);
+    /* Design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(340 75% 55%), hsl(340 65% 45%));
+    --gradient-secondary: linear-gradient(180deg, hsl(340 30% 98%), hsl(340 25% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(340 60% 25%), hsl(340 70% 35%), hsl(340 50% 20%));
+    --shadow-luxury: 0 20px 40px -12px hsl(340 60% 40% / 0.25);
+    --shadow-card: 0 4px 20px -4px hsl(340 50% 30% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -55,37 +55,37 @@
   }
 
   .dark {
-    --background: 120 30% 8%;
-    --foreground: 120 20% 95%;
+    --background: 340 30% 6%;
+    --foreground: 340 15% 95%;
 
-    --card: 120 25% 12%;
-    --card-foreground: 120 20% 95%;
+    --card: 340 25% 10%;
+    --card-foreground: 340 15% 95%;
 
-    --popover: 120 25% 12%;
-    --popover-foreground: 120 20% 95%;
+    --popover: 340 25% 10%;
+    --popover-foreground: 340 15% 95%;
 
-    --primary: 0 80% 55%;
+    --primary: 340 70% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 40% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 340 30% 18%;
+    --secondary-foreground: 340 20% 90%;
 
-    --muted: 120 15% 15%;
-    --muted-foreground: 120 10% 65%;
+    --muted: 340 15% 15%;
+    --muted-foreground: 340 10% 65%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 0 60% 15%;
+    --accent: 340 80% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 120 20% 20%;
-    --input: 120 20% 18%;
-    --ring: 0 80% 55%;
+    --border: 340 20% 18%;
+    --input: 340 20% 15%;
+    --ring: 340 70% 60%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(0 70% 45%), hsl(0 60% 35%));
-    --gradient-secondary: linear-gradient(180deg, hsl(120 30% 10%), hsl(120 25% 8%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 65% 30%), hsl(120 45% 20%), hsl(0 60% 25%));
+    --gradient-primary: linear-gradient(135deg, hsl(340 65% 50%), hsl(340 55% 40%));
+    --gradient-secondary: linear-gradient(180deg, hsl(340 30% 8%), hsl(340 25% 5%));
+    --gradient-hero: linear-gradient(135deg, hsl(340 50% 20%), hsl(340 60% 30%), hsl(340 40% 15%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -107,62 +107,40 @@
   }
 }
 
-/* Snowfall animation */
-@keyframes snowfall {
+/* Elegant animations */
+@keyframes shimmer {
   0% {
-    transform: translateY(-10vh) translateX(0);
-    opacity: 1;
+    background-position: -200% 0;
   }
   100% {
-    transform: translateY(100vh) translateX(20px);
-    opacity: 0.3;
+    background-position: 200% 0;
   }
 }
 
-@keyframes snowfall-reverse {
-  0% {
-    transform: translateY(-10vh) translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh) translateX(-20px);
-    opacity: 0.3;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-@keyframes pulse-glow {
+@keyframes glow {
   0%, 100% { 
-    box-shadow: 0 0 20px hsl(0 80% 50% / 0.4), 0 0 40px hsl(0 80% 50% / 0.2);
+    box-shadow: 0 0 20px hsl(340 75% 55% / 0.3);
   }
   50% { 
-    box-shadow: 0 0 30px hsl(0 80% 50% / 0.6), 0 0 60px hsl(0 80% 50% / 0.3);
+    box-shadow: 0 0 35px hsl(340 75% 55% / 0.5);
   }
 }
 
-.snowflake {
-  position: fixed;
-  top: -10px;
-  color: white;
-  font-size: 1rem;
-  pointer-events: none;
-  z-index: 1000;
-  animation: snowfall linear infinite;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, hsl(340 75% 90% / 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
 }
 
-.snowflake:nth-child(odd) {
-  animation-name: snowfall-reverse;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-.animate-twinkle {
-  animation: twinkle 2s ease-in-out infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
 }
