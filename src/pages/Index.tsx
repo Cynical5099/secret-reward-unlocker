@@ -120,8 +120,33 @@ const Index = () => {
           </p>
         </div>
 
+        {/* Urgency Section */}
+        <div className="max-w-2xl mx-auto mt-4 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
+          <p className="text-foreground font-semibold text-lg mb-2">
+            ⚡ Complete all deals today for fastest processing
+          </p>
+          <p className="text-muted-foreground text-sm">
+            Users who finish all steps in one session receive their gift cards first
+          </p>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-10 md:mt-14">
+          <Button 
+            variant="hero"
+            size="xl"
+            onClick={handleStartNow}
+            className="text-xl md:text-2xl px-10 md:px-14 py-5 md:py-7 mb-4 min-h-[44px] animate-glow bg-primary hover:bg-primary/90"
+          >
+            Claim My Gift Card
+          </Button>
+          <p className="text-sm text-muted-foreground max-w-md mx-auto px-4">
+            Join thousands who've already treated themselves with Victoria's Secret
+          </p>
+        </div>
+
         {/* FAQ Section */}
-        <div className="max-w-2xl mx-auto mt-10">
+        <div className="max-w-2xl mx-auto mt-14">
           <h3 className="text-xl md:text-2xl font-bold text-center text-foreground mb-6">
             Frequently Asked Questions
           </h3>
@@ -167,31 +192,6 @@ const Index = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-        </div>
-
-        {/* Urgency Section */}
-        <div className="max-w-2xl mx-auto mt-8 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
-          <p className="text-foreground font-semibold text-lg mb-2">
-            ⚡ Complete all deals today for fastest processing
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Users who finish all steps in one session receive their gift cards first
-          </p>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-10 md:mt-16">
-          <Button 
-            variant="hero"
-            size="xl"
-            onClick={handleStartNow}
-            className="text-xl md:text-2xl px-10 md:px-14 py-5 md:py-7 mb-4 min-h-[44px] animate-glow bg-primary hover:bg-primary/90"
-          >
-            Claim My Gift Card
-          </Button>
-          <p className="text-sm text-muted-foreground max-w-md mx-auto px-4">
-            Join thousands who've already treated themselves with Victoria's Secret
-          </p>
         </div>
       </div>
 
