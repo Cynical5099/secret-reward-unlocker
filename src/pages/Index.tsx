@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { StepCard } from "@/components/StepCard";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import giftCardImage from "@/assets/gift-card-hero.jpg";
 
 const Index = () => {
@@ -100,8 +101,8 @@ const Index = () => {
           
           <StepCard 
             number="2"
-            title="Complete 3 to 5 Partner Deals"
-            description="Each deal takes just minutes. The more you complete, the faster you'll receive your gift card. Skipping deals will disqualify you."
+            title="Complete 4 to 5 Partner Deals"
+            description="Each deal takes just minutes. Complete at least 4-5 deals to qualify. The more you complete, the faster you'll receive your gift card."
             highlight
           />
           
@@ -119,8 +120,57 @@ const Index = () => {
           </p>
         </div>
 
+        {/* FAQ Section */}
+        <div className="max-w-2xl mx-auto mt-10">
+          <h3 className="text-xl md:text-2xl font-bold text-center text-foreground mb-6">
+            Frequently Asked Questions
+          </h3>
+          <Accordion type="single" collapsible className="bg-card rounded-xl border border-border overflow-hidden">
+            <AccordionItem value="item-1" className="border-border px-5">
+              <AccordionTrigger className="text-foreground hover:no-underline">
+                How many deals do I need to complete?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                You need to complete a minimum of 4-5 deals to qualify for your $100 Victoria's Secret Gift Card. Completing more deals can speed up your reward processing.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2" className="border-border px-5">
+              <AccordionTrigger className="text-foreground hover:no-underline">
+                Is the Victoria's Secret gift card really free?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes! The gift card itself is free when you complete the required deals. Some deals are completely free (like downloading apps), while others may require a purchase or subscription sign-up.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3" className="border-border px-5">
+              <AccordionTrigger className="text-foreground hover:no-underline">
+                How long does it take to receive my gift card?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Most users receive their gift card within 24-48 hours after completing all required deals. Users who complete everything in one session typically receive theirs fastest.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4" className="border-border px-5">
+              <AccordionTrigger className="text-foreground hover:no-underline">
+                Can I use the gift card at any Victoria's Secret location?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes! Your $100 gift card can be used at any Victoria's Secret store, online at victoriassecret.com, and at Bath & Body Works locations.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5" className="border-border px-5 border-b-0">
+              <AccordionTrigger className="text-foreground hover:no-underline">
+                What happens if I don't complete all the deals?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                You must complete the minimum required deals (4-5) to qualify. Incomplete submissions will not receive the gift card. Make sure to finish all steps to secure your reward.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+
         {/* Urgency Section */}
-        <div className="max-w-2xl mx-auto mt-4 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
+        <div className="max-w-2xl mx-auto mt-8 p-6 bg-accent/10 border border-accent/30 rounded-xl text-center">
           <p className="text-foreground font-semibold text-lg mb-2">
             ⚡ Complete all deals today for fastest processing
           </p>
