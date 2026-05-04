@@ -8,7 +8,7 @@ const Index = () => {
   const [qualified, setQualified] = useState(false);
 
   const handleStartNow = () => {
-    window.open("https://offerlnks.com/aff_c?offer_id=324&aff_id=21664", "_blank");
+    window.open("https://glstrk.com/?offer_ids=Mjc2NywyNDEy&affiliate_id=MjE2NjQ%3D");
   };
 
   if (!qualified) {
